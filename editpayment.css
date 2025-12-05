@@ -1,0 +1,77 @@
+/* General page layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* background-image: url('../images/mydetails.jpg');  */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title styling */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Form container */
+form {
+    width: 60%; /* Adjusted width */
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency (90%) */
+    padding: 15px; /* Reduced padding */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Form labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Form input fields */
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 15px; /* Reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Reduced font size */
+    color: #333;
+}
+
+/* Submit button */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px; /* Add some spacing above the button if needed */
+}
+
+input[type="submit"] {
+    width: 50%;
+    padding: 8px; /* Reduced padding */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  
+    font-size: 14px; /* Reduced font size */
+}
+
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #45a049;
+    
+}
+
+/* Form field focus effect */
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}

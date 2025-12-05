@@ -1,0 +1,15 @@
+.savebtn
+{
+        cursor: pointer;
+        border-top-left-radius: 20px;
+        border-top-right-radius:20px ;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: rgb(255, 255, 255);
+        background-color:rgb(26, 127, 181);
+        width: 100px;
+        height: 40px;
+        margin: 10px auto; /* This ensures the button itself is centered */
+        display: block; /* Makes the button a block-level element */
+    
+}

@@ -1,0 +1,147 @@
+main {
+    flex: 1; /* Make the main content expand to take up remaining space */
+    padding: 20px;
+    
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+    /* Make the footer stay at the bottom */
+    position: relative;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/mydetails.jpg');
+   
+}
+
+
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.payment-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form-left, .form-right {
+    width: 45%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.payment-methods img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.card-details input {
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 0;
+}
+
+.card-details input:last-child {
+    margin-right: 0;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    
+}
+
+.cancel {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.pay {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.cancel:hover{
+    background-color: black;
+    color: aliceblue;
+
+}
+.pay:hover{
+    background-color: crimson;
+    color: yellow;
+}
+
+ /* Style for the radio buttons container */
+ .radio-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+   
+}
+
+/* Hide the images initially */
+.card-image {
+    /* display: none; */
+    max-width: 50px;
+    margin-top: 20px;
+    margin: 0 80px;
+  
+    mix-blend-mode: multiply; /* Blends image into the background */
+   
+    
+}
+
+/* Show the image of the selected card */
+input[type="radio"]:checked + label img {
+    display: block;
+}
+
+/* Style for radio buttons */
+label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.card-image:hover{
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    
+}

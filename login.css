@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: mediumaquamarine; /* This can be a fallback if the image doesn't load */
+    background-image: url('../images/login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure image doesn't repeat */
+    position: relative;
+}
+
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+} 
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-box {
+    width: 400px;
+    padding: 30px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.login-box{
+     box-shadow:#007BFF;
+     opacity: 0.8;
+     background-color: whitesmoke;
+     
+     
+     border-width: 10px;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+    
+}
+
+input:focus{
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Add shadow effect */
+}
+
+input::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+    font-style: italic;
+}
+
+.sign-up-button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;/*when moved to the button changes the pointer to a hand*/
+    text-transform: uppercase;
+    letter-spacing: 1px; /*space between the letters*/
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.sign-up-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sign-up-button:active {
+    background-color: #004085;
+ 
+}
+
+.sign-up-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.sign-up-button:disabled {
+    background-color: black;
+    cursor: not-allowed;/*Show that the button is disabled */
+    opacity: 0.6; /* Make it semi-transparent */
+}
+
+a{
+    text-decoration: none;
+}

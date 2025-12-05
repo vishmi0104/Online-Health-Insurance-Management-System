@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*FAQ section style*/
+.faq-container{
+    width: 65%;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 238, 0.188);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+/*FAQ title style*/
+.faq-title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+/*FAQ items style*/
+.faq-items{
+    margin-bottom: 15px;
+}
+
+/*FAQ questions*/
+.faq-question{
+    background-color: rgb(224, 224, 224);
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    color: black;
+}
+
+/*FAQ Question title*/
+.question-title{
+    margin: 0;
+}
+
+/*FAQ answer style*/
+.faq-answer{
+    display: none;
+    padding: 15px;
+    background-color: rgba(216, 214, 214, 0.716);
+    color: rgb(14, 13, 13);
+    margin: 0 5px;
+    border-radius: 3px;
+}
+
+/*FAQ toggle*/
+.faq-toggle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*FAQ toggle active style*/
+.faq-question:hover{
+    background-color: rgba(156, 156, 156, 0.8);
+    color: aliceblue;
+}
+
+.faq-items.active .faq-answer{
+    display: block;
+}
+
+.faq-items.active .fab-toggle{
+    content: "-";
+}
